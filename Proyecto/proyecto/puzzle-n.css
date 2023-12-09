@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8b9ec9;
+
+    
+}
+
+
+
+#contenedor{
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    
+    margin-top: 20px;
+}
+
+#contenedor div {
+    box-sizing: border-box;
+    flex-basis: calc(100% / var(--size));
+    
+    border: 1px solid black;
+ 
+}
+
+.FotosJuego {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 50px;
+    width: 390px;
+}
+
+.Imagen {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    margin: 5px;
+    border: 2px solid transparent;
+}
+
+.Imagen.Escogida {
+    border: 2px solid blue;
+}
+
+   
+
+
+

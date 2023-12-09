@@ -1,0 +1,60 @@
+h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-image: url(Imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-family: cursive;
+    font-size: 30px;
+    color: white;
+    padding-right: 20px;
+}
+a {
+    /* footer */
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 100px;
+}
+
+.inicio {
+    background-color: blue;
+    border-style: solid;
+    border-color: white;
+    border-radius: 80%;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.juego {
+    transition: all 1s linear;
+    display: block;
+    margin-top: 130px;
+}
+
+.fila {
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-right: 180px;
+    
+}

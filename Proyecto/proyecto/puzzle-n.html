@@ -1,0 +1,66 @@
+<!--
+
+Integrantes:
+Salamanca Campos	Andrey	andsala@estudiantec.cr
+Valverde Marin	Estefani Tatiana	2021554564@estudiantec.cr		
+Valverde Villachica	Jhonner	jhonner@estudiantec.cr		
+Xie Li	Dayana	dxie@estudiantec.cr	
+
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Prueba</title>
+    <!-- Fuente IMB Plex Sans   -->
+    <link rel="stylesheet" type="text/css" href="puzzle-n.css">
+</head>
+
+<body>
+  
+
+    <div class="FotosJuego">
+        <img class="Imagen" id = "imagen1" src = "./Imagenes/demon.jpg" onclick="SeleccionarImagen('./Imagenes/demon.jpg')"></img> 
+        <img class="Imagen" id = "imagen2" src = "./Imagenes/dragonball.jpg" onclick = "SeleccionarImagen('./Imagenes/dragonball.jpg')"></img>
+        <img class="Imagen" id = "imagen3" src = "./Imagenes/fullmetal.jpg" onclick = "SeleccionarImagen('./Imagenes/fullmetal.jpg')"></img>
+        <img class="Imagen" id = "imagen4" src = "./Imagenes/naruto.jpg" onclick = "SeleccionarImagen('./Imagenes/naruto.jpg')"></img>
+        <img class="Imagen" id = "imagen5" src = "./Imagenes/onepiece.jpg" onclick = "SeleccionarImagen('./Imagenes/onepiece.jpg')"></img>
+        <img class="Imagen" id = "imagen6" src = "./Imagenes/spy.jpg" onclick = "SeleccionarImagen('./Imagenes/spy.jpg')"></img>
+    </div>
+    <div class="Centrar">
+        <p style="font-size: 50px; color: black;">Puzzle</p>
+
+        <select id="TiposDeTablero">
+            <option value="3">3x3</option>
+            <option value="4">4x4</option>
+            <option value="5">5x5</option>
+            <option value="6">6x6</option>
+            <option value="7">7x7</option>
+            <option value="8">8x8</option>
+            <option value="9">9x9</option>
+            <option value="10">10x10</option>
+            <option value="11">11x11</option>
+            <option value="12">12x12</option>
+            <option value="13">13x13</option>
+            <option value="14">14x14</option>
+            <option value="15">15x15</option>
+            <option value="16">16x16</option>
+            <option value="17">17x17</option>
+            <option value="18">18x18</option>
+            <option value="19">19x19</option>
+            <option value="20">20x20</option>
+        </select>
+        <button onclick="CrearTableroAleatorioCuadrado()">Generar Tablero</button>
+        <button onclick="shuffle()" >Revolver</button>
+        <button onclick="solucionAestrella()" >A *</button>
+        <button onclick="resolverPorBacktracking()">Resolver por Backtracking</button>
+        
+
+        <div id="contenedor"></div>
+       
+    </div>
+
+    <script src="puzzle-n.js"></script>
+</body>
+
+</html>
